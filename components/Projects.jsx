@@ -1,7 +1,7 @@
 import Reveal from "./Reveal";
 
 const projects = [
-    {
+  {
     title: "Adepoju Taiwo's Portfolio Project",
     description:
       "A frontend engineering portfolio for global audience, it showcases the projects done, the tools ready to use and level of expertise",
@@ -10,27 +10,13 @@ const projects = [
       "Tools i build with, chosen for speed, clean collaboration with design and backend teams",
       "Several Social Media platforms available for enquiry and discussions",
     ],
-    tags: ["Next.js", "JavaScript", "Tailwind CSS", "Axios"],
+    tags: ["Next.js", "JavaScript", "Tailwind CSS", "React"],
     liveHref: "https://adepojutb-portfolio.vercel.app",
     codeHref: "https://github.com/Abdullbaasit/adepoju-portfolio",
     mockupBars: ["w-2/5"],
     mockupTiles: 3,
   },
-  {
-    title: "Ecowatch — Environmental Monitoring Platform(Ongoing Project)",
-    description:
-      "A web platform that tracks and visualizes real-time environmental data, helping communities stay informed on air quality, weather shifts, and local environmental alerts.",
-    features: [
-      "Live data pulled and cached via Axios-powered API integrations",
-      "Interactive charts and maps for air quality and weather trends",
-      "Fully responsive layout tuned for low-bandwidth mobile access"
-    ],
-    tags: ["React", "JavaScript", "Tailwind CSS", "Axios"],
-    liveHref: "#",
-    codeHref: "#",
-    mockupBars: ["w-3/5", "w-4/5", "w-2/5"],
-    mockupTiles: 2
-  },
+
   {
     title: "Shop12 — E-commerce Website",
     description:
@@ -38,19 +24,45 @@ const projects = [
     features: [
       "Product filtering, search, and cart built with React and Next.js",
       "Type-safe data layer with JavaScript across the app",
-      "Checkout flow with Axios-driven order handling"
+      "Checkout flow with Axios-driven order handling",
     ],
     tags: ["Next.js", "JavaScript", "Tailwind CSS", "Axios"],
     liveHref: "https://shop12q.netlify.app/",
     codeHref: "https://github.com/Abdullbaasit/Shop-12",
     mockupBars: ["w-2/5"],
-    mockupTiles: 4
-  }
+    mockupTiles: 4,
+  },
+  {
+    title:
+      "Kept&Clean — Waste Management and Collection Platform(Ongoing Project)",
+    description:
+      "A web platform that connects resident and waste collection companies, company notifies the resident when their waste will be carried and also allow payment on the platform, helping communities stay informed on waste management, environmental cleaniness and local environmental alerts.",
+    features: [
+      "Live data pulled and cached with real life data from the Backend developer",
+      "Interactive interface schedule and reports for clean environment",
+      "Fully Fledged website with payment integration from Backend",
+    ],
+    tags: [
+      "Nextjs",
+      "JavaScript",
+      "Tailwind CSS",
+      "Nodejs",
+      "Expressjs",
+      "Prisma",
+    ],
+    liveHref: "#",
+    codeHref: "#",
+    mockupBars: ["w-3/5", "w-4/5", "w-2/5"],
+    mockupTiles: 2,
+  },
 ];
 
 export default function Projects() {
   return (
-    <section id="projects" className="border-y border-oliveSoft bg-oliveSoft py-16 sm:py-22 dark:border-darkLine dark:bg-darkSurfaceSoft">
+    <section
+      id="projects"
+      className="border-y border-oliveSoft bg-oliveSoft py-16 sm:py-22 dark:border-darkLine dark:bg-darkSurfaceSoft"
+    >
       <div className="mx-auto max-w-[1160px] px-6">
         <div className="mb-11 flex flex-wrap items-end justify-between gap-3">
           <div>
@@ -62,8 +74,8 @@ export default function Projects() {
             </h2>
           </div>
           <p className="max-w-[360px] text-[14.5px] text-inkSoft dark:text-darkInkSoft">
-            Two recent builds that reflect how I approach real products, from data-heavy
-            dashboards to shopping experiences.
+            Two recent builds that reflect how I approach real products, from
+            data-heavy dashboards to shopping experiences.
           </p>
         </div>
 
@@ -74,7 +86,9 @@ export default function Projects() {
               delay={idx * 100}
               className="grid grid-cols-1 overflow-hidden rounded-2xl border border-oliveSoft bg-white transition-shadow duration-300 hover:shadow-xl md:grid-cols-2 dark:border-darkLine dark:bg-darkSurface"
             >
-              <div className={`flex flex-col justify-center p-8 sm:p-10 ${idx % 2 === 1 ? "md:order-2" : ""}`}>
+              <div
+                className={`flex flex-col justify-center p-8 sm:p-10 ${idx % 2 === 1 ? "md:order-2" : ""}`}
+              >
                 <span className="mb-3.5 w-fit rounded-full bg-oliveSoft px-2.5 py-1 font-mono text-[11.5px] text-oliveDeep dark:bg-darkSurfaceSoft dark:text-darkOliveDeep">
                   case study
                 </span>
@@ -147,12 +161,20 @@ export default function Projects() {
                   ) : (
                     <div className="p-4">
                       {project.mockupBars.map((w, i) => (
-                        <div key={i} className={`mb-2.5 h-[9px] rounded ${w} bg-oliveSoft dark:bg-darkSurfaceSoft`} />
+                        <div
+                          key={i}
+                          className={`mb-2.5 h-[9px] rounded ${w} bg-oliveSoft dark:bg-darkSurfaceSoft`}
+                        />
                       ))}
                       <div className="mt-3.5 grid grid-cols-2 gap-2">
-                        {Array.from({ length: project.mockupTiles }).map((_, i) => (
-                          <div key={i} className="h-11 rounded-md bg-oliveSoft dark:bg-darkSurfaceSoft" />
-                        ))}
+                        {Array.from({ length: project.mockupTiles }).map(
+                          (_, i) => (
+                            <div
+                              key={i}
+                              className="h-11 rounded-md bg-oliveSoft dark:bg-darkSurfaceSoft"
+                            />
+                          ),
+                        )}
                       </div>
                     </div>
                   )}
