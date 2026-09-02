@@ -6,7 +6,7 @@ const facts = [
   { k: "Experience", v: "2+ years" },
   { k: "Core stack", v: "React · Next.js · JavaScript " },
   { k: "Availability", v: "Open to remote work" },
-  { k: "Timezone", v: "GMT+1 (WAT)" }
+  { k: "Timezone", v: "GMT+1 (WAT)" },
 ];
 
 export default function About() {
@@ -21,14 +21,16 @@ export default function About() {
             Turning designs into real, working products
           </h2>
           <p className="mb-5 max-w-[560px] text-[16px] text-inkSoft sm:text-[16.5px] dark:text-darkInkSoft">
-            I build interfaces that hold up under real-world conditions — slow networks, small
-            screens, and screen readers included. My work spans landing pages, dashboards, and
-            full e-commerce platforms, always with a close eye on performance and usability.
+            I build interfaces that hold up under real-world conditions slow
+            networks, small screens, and screen readers included. My work spans
+            landing pages, dashboards, and full e-commerce platforms, always
+            with a close eye on performance and usability.
           </p>
           <p className="max-w-[560px] text-[16px] text-inkSoft sm:text-[16.5px] dark:text-darkInkSoft">
-            I lean on React and Next.js for scalable frontends, TypeScript for safer code,
-            Tailwind for fast and consistent styling, and Axios to connect cleanly with backend
-            APIs — a stack that lets me move quickly without cutting corners.
+            I lean on React and Next.js for scalable frontends, TypeScript for
+            safer code, Tailwind for fast and consistent styling, and Axios to
+            connect cleanly with backend APIs, a stack that lets me move
+            quickly without cutting corners.
           </p>
         </div>
 
@@ -37,11 +39,17 @@ export default function About() {
             <div
               key={fact.k}
               className={`flex items-start justify-between gap-2.5 py-3 text-sm ${
-                i !== facts.length - 1 ? "border-b border-oliveSoft dark:border-darkLine" : ""
+                i !== facts.length - 1
+                  ? "border-b border-oliveSoft dark:border-darkLine"
+                  : ""
               }`}
             >
-              <span className="text-inkSoft dark:text-darkInkSoft">{fact.k}</span>
-              <span className="text-right font-semibold text-ink dark:text-darkText">{fact.v}</span>
+              <span className="text-inkSoft dark:text-darkInkSoft">
+                {fact.k}
+              </span>
+              <span className="text-right font-semibold text-ink dark:text-darkText">
+                {fact.v}
+              </span>
             </div>
           ))}
         </div>

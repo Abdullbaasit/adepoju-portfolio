@@ -6,11 +6,18 @@ import {
   NextIcon,
   TailwindIcon,
   AxiosIcon,
-  CSSIcon
+  CSSIcon,
 } from "./icons/TechIcons";
 
-const stack = ["JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS","CSS3"];
-const places = ["Nigeria", "Rwanda"];
+const stack = [
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Tailwind CSS",
+  "CSS3",
+];
+
 
 export default function Hero() {
   return (
@@ -22,20 +29,16 @@ export default function Hero() {
 
       <div className="mx-auto grid max-w-[1160px] grid-cols-1 items-center gap-14 px-6 md:grid-cols-[1.1fr_0.9fr]">
         <Reveal delay={0}>
-          <span className="mb-5 inline-flex items-center gap-2 rounded-full border border-olive bg-oliveSoft px-3.5 py-1.5 font-mono text-[12.5px] text-oliveDeep dark:border-darkLine dark:bg-darkSurfaceSoft dark:text-darkOliveDeep">
-            <span className="h-[7px] w-[7px] animate-pulseSoft rounded-full bg-[#5f9e5f]" />
-            open to global opportunities
-          </span>
+          
 
           <h1 className="mb-5 max-w-xl font-display text-[32px] font-bold leading-[1.12] tracking-tight text-ink sm:text-[40px] lg:text-[46px] dark:text-darkText">
-            Frontend engineering,
-            <span className="text-oliveDeep dark:text-darkOliveDeep">global</span> audience.
+            Frontend engineering for global audience.
           </h1>
 
           <p className="mb-8 max-w-[480px] text-[16px] text-inkSoft sm:text-[17px] dark:text-darkInkSoft">
-            I'm Adepoju Taiwo, a frontend web developer crafting fast, accessible, and
-            beautifully engineered interfaces — from concept to production, for teams and clients
-            around the world.
+            I'm Adepoju Taiwo, a frontend web developer crafting fast,
+            accessible, and beautifully engineered interfaces from concept to
+            production, for teams and clients around the world.
           </p>
 
           <div className="mb-9 flex flex-wrap gap-3.5">
@@ -46,7 +49,7 @@ export default function Hero() {
               View my work →
             </a>
             <a
-              href="public/assets/Frontend CVV.pdf"
+              href="/assets/Frontend CVV.pdf"
               download
               className="inline-flex items-center gap-2 rounded-[10px] border-[1.5px] border-olive bg-white px-6 py-3.5 text-[14.5px] font-semibold text-ink transition hover:border-oliveDeep hover:bg-oliveSoft dark:border-darkLine dark:bg-darkSurface dark:text-darkText dark:hover:border-darkOliveDeep"
             >
@@ -73,7 +76,7 @@ export default function Hero() {
 
             <div className="absolute inset-[17%] overflow-hidden rounded-full border-[5px] border-white shadow-[0_14px_40px_var(--shadow)] dark:border-darkSurface">
               <Image
-                src="/assets/profile.jpg"
+                src="/assets/Taiwo.jpg"
                 alt="Adepoju Taiwo, Frontend Web Developer"
                 fill
                 sizes="380px"
@@ -82,45 +85,60 @@ export default function Hero() {
               />
             </div>
 
-            <OrbitChip position="left-1/2 -top-2.5 -translate-x-1/2" animate="animate-floatChipReverse">
+            <OrbitChip
+              position="left-1/2 -top-2.5 -translate-x-1/2"
+              animate="animate-floatChipReverse"
+            >
               <ReactIcon />
             </OrbitChip>
-            <OrbitChip position="right-[-20px] top-[20%]" animate="animate-floatChip [animation-delay:.2s]">
+            <OrbitChip
+              position="right-[-20px] top-[20%]"
+              animate="animate-floatChip [animation-delay:.2s]"
+            >
               <TypeScriptIcon />
             </OrbitChip>
-            <OrbitChip position="right-[-16px] bottom-[20%]" animate="animate-floatChip [animation-delay:.9s]">
+            <OrbitChip
+              position="right-[-16px] bottom-[20%]"
+              animate="animate-floatChip [animation-delay:.9s]"
+            >
               <NextIcon />
             </OrbitChip>
-            <OrbitChip position="left-1/2 -bottom-2.5 -translate-x-1/2" animate="animate-floatChipReverse [animation-delay:.4s]">
+            <OrbitChip
+              position="left-1/2 -bottom-2.5 -translate-x-1/2"
+              animate="animate-floatChipReverse [animation-delay:.4s]"
+            >
               <TailwindIcon />
             </OrbitChip>
-            <OrbitChip position="left-[-18px] bottom-[20%]" animate="animate-floatChip [animation-delay:1.3s]">
+            <OrbitChip
+              position="left-[-18px] bottom-[20%]"
+              animate="animate-floatChip [animation-delay:1.3s]"
+            >
               <AxiosIcon />
             </OrbitChip>
-            <OrbitChip position="left-[-22px] top-[20%]" animate="animate-floatChip [animation-delay:1.7s]">
+            <OrbitChip
+              position="left-[-22px] top-[20%]"
+              animate="animate-floatChip [animation-delay:1.7s]"
+            >
               <CSSIcon />
             </OrbitChip>
 
-            {/* <div className="absolute bottom-1.5 left-1/2 z-10 flex -translate-x-1/2 items-center gap-1.5 whitespace-nowrap rounded-full bg-ink px-4 py-2 text-[12.5px] font-semibold text-cream shadow-lg dark:bg-oliveSoft dark:text-ink">
-              <span className="h-2 w-2 flex-shrink-0 rounded-full bg-[#7fd68c]" />
-              Available worldwide
-            </div> */}
           </div>
         </Reveal>
       </div>
 
-      <Reveal className="mt-4 border-y border-oliveSoft py-6 dark:border-darkLine" delay={300}>
+      <Reveal
+        className="mt-4 border-y border-oliveSoft py-6 dark:border-darkLine"
+        delay={300}
+      >
         <div className="mx-auto flex max-w-[1160px] flex-wrap items-center justify-between gap-3.5 px-6">
-          <span className="font-mono text-xs text-inkSoft dark:text-darkInkSoft">
-
-          </span>
-          <div className="flex flex-wrap gap-6 text-[13.5px] font-semibold text-inkSoft dark:text-darkInkSoft">
+          <span className="font-mono text-xs text-inkSoft dark:text-darkInkSoft"></span>
+          {/* <div className="flex flex-wrap gap-6 text-[13.5px] font-semibold text-inkSoft dark:text-darkInkSoft">
             {places.map((place) => (
               <span key={place} className="text-ink dark:text-darkText">
                 {place}
               </span>
             ))}
-          </div>
+          </div> */}
         </div>
       </Reveal>
     </section>

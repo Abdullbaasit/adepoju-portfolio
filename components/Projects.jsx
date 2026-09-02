@@ -1,8 +1,23 @@
 import Reveal from "./Reveal";
 
 const projects = [
+    {
+    title: "Adepoju Taiwo's Portfolio Project",
+    description:
+      "A frontend engineering portfolio for global audience, it showcases the projects done, the tools ready to use and level of expertise",
+    features: [
+      "Projects deployed,project ongoing and achievements built with React and Next.js",
+      "Tools i build with, chosen for speed, clean collaboration with design and backend teams",
+      "Several Social Media platforms available for enquiry and discussions",
+    ],
+    tags: ["Next.js", "JavaScript", "Tailwind CSS", "Axios"],
+    liveHref: "https://adepojutb-portfolio.vercel.app",
+    codeHref: "https://github.com/Abdullbaasit/adepoju-portfolio",
+    mockupBars: ["w-2/5"],
+    mockupTiles: 3,
+  },
   {
-    title: "Ecowatch — Environmental Monitoring Platform",
+    title: "Ecowatch — Environmental Monitoring Platform(Ongoing Project)",
     description:
       "A web platform that tracks and visualizes real-time environmental data, helping communities stay informed on air quality, weather shifts, and local environmental alerts.",
     features: [
@@ -23,7 +38,7 @@ const projects = [
     features: [
       "Product filtering, search, and cart built with React and Next.js",
       "Type-safe data layer with JavaScript across the app",
-      "Smooth checkout flow with Axios-driven order handling"
+      "Checkout flow with Axios-driven order handling"
     ],
     tags: ["Next.js", "JavaScript", "Tailwind CSS", "Axios"],
     liveHref: "https://shop12q.netlify.app/",

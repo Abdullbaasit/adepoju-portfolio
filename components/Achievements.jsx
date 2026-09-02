@@ -9,13 +9,18 @@ const stats = [
 const timeline = [
   {
     year: "2026",
-    title: "Built Kept&Clean website",
-    body: "Designed and shipped a live data platform used to track waste collection and report illegal waste dumping for local communities."
+    title: "Building Kept&Clean website",
+    body: "Designed and shipped a live data platform used to track waste collection and report illegal waste dumping for local communities within Oyo State."
+  },
+   {
+    year: "2026",
+    title: "Launched Adepoju Taiwo Basit Portfolio Porject",
+    body: "Delivered a full-scale Portfolio Project with Next.js and JavaScript, cutting checkout drop-off throug UI."
   },
   {
     year: "2026",
     title: "Launched Shop12 e-commerce platform",
-    body: "Delivered a full-scale storefront with Next.js and TypeScript, cutting checkout drop-off through a streamlined UI."
+    body: "Delivered a full-scale storefront with Next.js and JavaScript, cutting checkout drop-off through a streamlined UI."
   },
   {
     year: "2025",
